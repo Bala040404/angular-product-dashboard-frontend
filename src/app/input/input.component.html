@@ -1,0 +1,4 @@
+<div class="input" [ngClass]="{backgroundOrange:search.trim()!==''}">
+    <input type="text" [(ngModel)]="search" >
+    <p *ngIf="search.trim()!==''">you searched for {{search}}</p>
+</div>
